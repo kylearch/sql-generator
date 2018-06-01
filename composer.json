@@ -1,0 +1,36 @@
+{
+    "name": "kylearch/sql-generator",
+    "description": "Generate SQL statements from Laravel migrations to run manually, instead of via `php artisan migrate`.",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "migration",
+        "generator",
+        "migrations",
+        "artisan"
+    ],
+    "authors": [
+        {
+            "name": "Kyle Arch",
+            "email": "kaarch@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/database": ">=5.0",
+        "illuminate/support": ">=5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "KyleArch\\SqlGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KyleArch\\SqlGenerator\\Providers\\SqlGeneratorServiceProvider"
+            ]
+        }
+    }
+}
